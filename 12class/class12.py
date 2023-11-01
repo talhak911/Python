@@ -1,12 +1,13 @@
 studentsList:list[dict]=[]
 class Student():
-    def __init__(self,name:str,age:int) -> None:
+    def __init__(this,name:str,age:int) -> None:
+        this.newvariable = 12
         if age <18 or age >65:
             raise StudentAgeError("You are not eligible for this program")
         else:
-            self.name=name
-            self.age=age
-            std:dict={"name":self.name,"Age":self.age}
+            this.name=name
+            this.age=age
+            std:dict={"name":this.name,"Age":this.age}
             studentsList.append(std)
 
  
